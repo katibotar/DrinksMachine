@@ -1,0 +1,41 @@
+﻿@model DrinksMachine4.Models.DrinkModel
+
+
+@*<div >
+        <div class="drink-name-details">@Model.DrinkLabelName</div>
+        <img class="selected" src="~/Images/@(Model.DrinkId).png" alt="@Model.DrinkLabelName" />
+    </div>
+    <div class="drinkSteps">
+        <ul>
+            @foreach (var step in Model.StepsToMakeDrink)
+            {
+                <li>@step</li>
+            }
+        </ul>
+    </div>*@
+
+<div id="container">
+
+    <div class="drink-name-details">
+        @Model.DrinkLabelName
+    </div>
+
+    <div>
+        <img class="selected" src="~/Images/@(Model.DrinkId).png" alt="@Model.DrinkLabelName" />
+    </div>
+
+    <div class="drinkSteps">
+        <ul>
+            @foreach (var step in Model.StepsToMakeDrink)
+            {
+                <li class="leftAlign">@step</li>
+            }
+        </ul>
+    </div>
+
+</div>
+
+
+<div>
+    <button onclick="location.href='@Url.Action("Index", "Home")';return false;">Back</button>
+</div>

@@ -1,0 +1,19 @@
+﻿@model List<DrinksMachine4.Models.DrinkModel>
+
+@using (Html.BeginForm())
+{
+    <div class="title">Please make a choice by tapping the screen</div>
+    <div class="wrapper">
+        <div class="img-area">
+            @foreach (var item in Model)
+            {
+                <div class="single-img">
+                    <a href="@Url.Action("GetDrink", "Home", new { id = item.DrinkId })">
+                        <img class="img" src="~/Images/@(item.DrinkId)-sm.png" alt="@item.DrinkLabelName" />
+                    </a>
+                    <div class="drink-name">@item.DrinkLabelName</div>
+                </div>
+            }
+        </div>
+    </div>  
+}

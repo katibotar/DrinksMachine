@@ -1,0 +1,101 @@
+﻿body, html {
+    height: 100%;
+    background-image: url('../Images/gray-painted-background.jpg');
+    background-size: cover;
+    padding-top: 30px;
+}
+
+footer {
+    color: #fff;
+}
+
+.vm-navbar-brand {
+    margin-left: -5px;
+    color: #fff;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 22px;
+    font-family:  'Lucida Calligraphy';
+    line-height: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Lucida Calligraphy';
+    font-size: 22px;
+    color: #fff;
+}
+
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.single-img {
+    padding: 0 5px 20px;
+    position: relative;
+    text-align: center;  
+}
+
+.drink-image {
+    text-align: center;
+}
+
+.img {
+    width: 250px;
+    height: 225px;
+    border-radius: 35px;
+}
+
+.img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+
+.selected {
+    width: 320px;
+    height: 280px;
+    border-radius: 35px;
+}
+
+.drink-name {
+    position: absolute;
+    margin: auto;
+    width: 250px;
+    bottom: 20px;
+    font-size: 14px;
+    font-family: 'Lucida Calligraphy';
+}
+
+.drink-name-details {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.drinkSteps {
+    background: gainsboro;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    padding: 20px 20px 20px 10px;
+    margin-top: 20px;
+    border-radius: 35px;
+    text-align: center;
+    width: 30%;
+}
+
+.drinkSteps .leftAlign {
+    text-align: left;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
